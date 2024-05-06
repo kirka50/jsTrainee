@@ -1,0 +1,20 @@
+<script>
+  alert( null || 2 || undefined ); // 2
+  alert( alert(1) || 2 || alert(3) ); // 1 2 
+  alert( 1 && null && 2 ); //null
+  alert( alert(1) && alert(2) ); // 1 undef
+  alert( null || 2 && 3 || 4 ); // 3
+  let value = NaN;
+  value &&= 10;
+  value ||= 20;
+  value &&= 30;
+  value ||= 40;
+  alert(value); // 30
+  let a = prompt();
+  if ( a >= 14 && a <= 90) {
+    alert('norm')
+  } else alert('ne norm')
+  if (-1 || 0) alert( 'first' ); // vipolnit
+  if (-1 && 0) alert( 'second' ); // ne 
+  if (null || -1 && 1) alert( 'third' ); // vipolnit
+</script>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<script>
+let num;
+function isSimple(num) {
+  for (let i = 2; i < num; i++) {
+    if (num % i == 0) {
+      return false
+    }
+  }
+  return true
+}
+num = Number(prompt('chislo'))
+for (let i = 2; i < num; i++) {
+  if (isSimple(i)) alert(i)
+}
+</script>
+<body>
+
+</body>
