@@ -1,0 +1,10 @@
+<script lang="js">
+  function checkSpam(spam) {
+    spam = spam.toLowerCase();
+    if (spam.includes('viagra') || spam.includes('xxx')) return true
+    return false
+  }
+  alert(checkSpam('buy ViAgRA now'));
+  alert(checkSpam('free xxxxx'));
+  alert(checkSpam("innocent rabbit"));
+</script>
